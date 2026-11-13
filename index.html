@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEVELING — Cognitive Architecture & Logic Trainer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #0b0f19;
+      color: #f1f5f9;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      min-height: 100vh;
+    }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .hero-glow {
+      background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.18) 0%, rgba(6, 182, 212, 0.08) 40%, rgba(11, 15, 25, 0) 75%);
+    }
+    .card-surface {
+      background-color: rgba(19, 27, 46, 0.85);
+      border: 1px solid #1e293b;
+      border-radius: 1rem;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    .card-surface:hover {
+      border-color: rgba(99, 102, 241, 0.5);
+      transform: translateY(-2px);
+    }
+    .cta-btn {
+      background: linear-gradient(135deg, #06b6d4, #6366f1, #7c3aed);
+      color: #ffffff;
+      text-decoration: none;
+      transition: transform 0.15s ease, box-shadow 0.2s ease;
+      box-shadow: 0 10px 30px -5px rgba(99, 102, 241, 0.45);
+    }
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px -5px rgba(6, 182, 212, 0.6);
+    }
+    .cta-btn:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body class="hero-glow flex flex-col justify-between min-h-screen">
+
+  <!-- Top Navigation Bar -->
+  <header style="border-bottom: 1px solid rgba(30, 41, 59, 0.8); background-color: rgba(15, 23, 42, 0.85); backdrop-filter: blur(8px);">
+    <div style="max-width: 64rem; margin: 0 auto; padding: 1rem 1.25rem; display: flex; align-items: center; justify-content: space-between;">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <div style="width: 2.25rem; height: 2.25rem; border-radius: 0.75rem; background: linear-gradient(135deg, #06b6d4, #6366f1, #7c3aed); display: flex; align-items: center; justify-content: center;">
+          <svg style="width: 1.25rem; height: 1.25rem; color: white;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-weight: 900; letter-spacing: 0.06em; font-size: 1.125rem; color: #fff;">LEVELING</span>
+          <span class="font-mono" style="font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; background: #083344; color: #22d3ee; border: 1px solid #155e75;">ENGINE v3.2</span>
+        </div>
+      </div>
+
+      <a href="app.html" class="font-mono" style="font-size: 0.75rem; font-weight: 700; color: #22d3ee; text-decoration: none; padding: 0.5rem 0.875rem; border-radius: 0.5rem; background: rgba(8, 51, 68, 0.6); border: 1px solid #155e75;">
+        Enter App →
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Hero & Mission Section -->
+  <main style="max-width: 64rem; margin: 0 auto; padding: 3rem 1.25rem; width: 100%;">
+    
+    <!-- Hero Intro -->
+    <section style="text-align: center; max-width: 44rem; margin: 0 auto 3.5rem auto;">
+      <div class="font-mono" style="display: inline-block; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #818cf8; background: rgba(49, 46, 129, 0.35); border: 1px solid rgba(99, 102, 241, 0.35); padding: 0.35rem 0.85rem; border-radius: 9999px; margin-bottom: 1.25rem;">
+        Deliberate Cognitive Calibration
+      </div>
+
+      <h1 style="font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 900; line-height: 1.15; color: #ffffff; margin: 0 0 1.25rem 0;">
+        Sharpen Your Logic. <br>
+        <span style="background: linear-gradient(90deg, #22d3ee, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Eliminate Cognitive Blindspots.</span>
+      </h1>
+
+      <p style="font-size: 1rem; line-height: 1.65; color: #94a3b8; margin: 0 0 2rem 0;">
+        <strong>LEVELING</strong> is an offline-first cognitive training engine designed to move your thinking from fast, error-prone intuition to rigorous analytical deduction. Practice spatial transformations, working memory retention, formal syllogisms, and mathematical pattern synthesis in a distraction-free environment.
+      </p>
+
+      <!-- Primary Launch Button -->
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 0.75rem;">
+        <a href="app.html" class="cta-btn" style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 1rem 2.25rem; border-radius: 0.875rem; font-weight: 800; font-size: 1rem; letter-spacing: 0.02em;">
+          <span>Launch LEVELING Trainer</span>
+          <svg style="width: 1.25rem; height: 1.25rem;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+        <span class="font-mono" style="font-size: 0.7rem; color: #64748b;">
+          100% Free • Works Offline • Zero Account Required
+        </span>
+      </div>
+    </section>
+
+    <!-- What the Website Aims Towards (3 Core Pillars) -->
+    <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin-bottom: 3rem;">
+      
+      <!-- Pillar 1 -->
+      <div class="card-surface" style="padding: 1.5rem;">
+        <div class="font-mono" style="font-size: 0.7rem; color: #22d3ee; text-transform: uppercase; font-weight: 700; margin-bottom: 0.5rem;">
+          01 • Adaptive Protocol
+        </div>
+        <h2 style="font-size: 1.1rem; font-weight: 700; color: #ffffff; margin: 0 0 0.5rem 0;">
+          Dynamic Procedural Scaling
+        </h2>
+        <p style="font-size: 0.85rem; line-height: 1.6; color: #94a3b8; margin: 0;">
+          Never memorize static answer keys. Our procedural engine generates fresh Spatial, Working Memory, Deductive Logic, and Pattern challenges that scale across 5 difficulty tiers in real time.
+        </p>
+      </div>
+
+      <!-- Pillar 2 -->
+      <div class="card-surface" style="padding: 1.5rem;">
+        <div class="font-mono" style="font-size: 0.7rem; color: #a78bfa; text-transform: uppercase; font-weight: 700; margin-bottom: 0.5rem;">
+          02 • Paradox Core
+        </div>
+        <h2 style="font-size: 1.1rem; font-weight: 700; color: #ffffff; margin: 0 0 0.5rem 0;">
+          Counter-Intuitive Trials
+        </h2>
+        <p style="font-size: 0.85rem; line-height: 1.6; color: #94a3b8; margin: 0;">
+          Progress through structured 10-question campaign levels targeting classic cognitive biases, Bayesian base-rate traps, game theory equilibria, and lateral deduction.
+        </p>
+      </div>
+
+      <!-- Pillar 3 -->
+      <div class="card-surface" style="padding: 1.5rem;">
+        <div class="font-mono" style="font-size: 0.7rem; color: #fb7185; text-transform: uppercase; font-weight: 700; margin-bottom: 0.5rem;">
+          03 • The Crucible & Diagnostics
+        </div>
+        <h2 style="font-size: 1.1rem; font-weight: 700; color: #ffffff; margin: 0 0 0.5rem 0;">
+          Zero-Guesswork Mastery
+        </h2>
+        <p style="font-size: 0.85rem; line-height: 1.6; color: #94a3b8; margin: 0;">
+          Instead of rewarding lucky guesses, an "I Don't Know" reveal option and an automatic Crucible review deck capture missed problems so you can study the step-by-step proof and re-attempt them later.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- Cognitive Domains Overview Strip -->
+    <section class="card-surface" style="padding: 1.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;">
+      <div>
+        <h3 style="font-size: 0.95rem; font-weight: 700; color: #ffffff; margin: 0 0 0.25rem 0;">
+          4 Core Cognitive Domains Tracked
+        </h3>
+        <p style="font-size: 0.8rem; color: #94a3b8; margin: 0;">
+          Build your daily streak and monitor live accuracy across all four problem-solving pillars:
+        </p>
+      </div>
+      <div class="font-mono" style="display: flex; flex-wrap: wrap; gap: 0.5rem; font-size: 0.75rem;">
+        <span style="padding: 0.35rem 0.75rem; border-radius: 0.5rem; background: #0f172a; border: 1px solid #1e293b; color: #67e8f9;">● Spatial Rotation</span>
+        <span style="padding: 0.35rem 0.75rem; border-radius: 0.5rem; background: #0f172a; border: 1px solid #1e293b; color: #fcd34d;">● Working Memory</span>
+        <span style="padding: 0.35rem 0.75rem; border-radius: 0.5rem; background: #0f172a; border: 1px solid #1e293b; color: #c4b5fd;">● Deductive Logic</span>
+        <span style="padding: 0.35rem 0.75rem; border-radius: 0.5rem; background: #0f172a; border: 1px solid #1e293b; color: #6ee7b7;">● Pattern & Math</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer style="border-top: 1px solid rgba(30, 41, 59, 0.6); padding: 1.25rem; text-align: center; font-size: 0.75rem; color: #64748b;" class="font-mono">
+    LEVELING Engine v3.2 • LocalStorage Offline Architecture
+  </footer>
+
+</body>
+</html>
